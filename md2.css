@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+.container {
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  margin: 5px;
+  text-align: left;
+  background: darkgray;
+}
+
+.col-md-4 > div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin: -15px -15px 15px 70%;
+  border: 1px solid #000;
+}
+
+.col-md-4 > div > h3 {
+  margin: auto;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+div.chic {
+  background: #d59898;
+}
+div.beef {
+  background: #c14543;
+}
+div.sushi {
+  background: #e5d198;
+}
+
+@media screen and (max-width: 970px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: auto;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+  }
+
+  .col-md-6 {
+    width: 95%;
+  }
+}
